@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# App for showing Account Statement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Application architecture
+src/pages - All the various pages are defined here. 
+- Each page will have a “components” dir. This will hold all the components that are required by only this page.
+- Each page will have a “models” dir. This will hold all the component props types.
 
 ## Available Scripts
 

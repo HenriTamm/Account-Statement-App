@@ -4,15 +4,17 @@ import { AccountRow } from "./AccountRow";
 interface AccountTableProps {
   accounts: AccountData[];
   setSelectedAccount: (account: AccountData) => void;
+  selectedAccount: AccountData;
 }
 
-export const AccountTable = ({ accounts, setSelectedAccount } : AccountTableProps) => {
+export const AccountTable = ({ accounts, setSelectedAccount, selectedAccount } : AccountTableProps) => {
   const rows: JSX.Element[] = [];
 
   accounts.forEach((account) => {
     rows.push(
       <AccountRow key={account.key} account={account} 
-      setSelectedAccount={(account: AccountData) => setSelectedAccount(account)}/>
+      setSelectedAccount={(account: AccountData) => setSelectedAccount(account)}
+      checked={account === selectedAccount}/>
     );
   });
 

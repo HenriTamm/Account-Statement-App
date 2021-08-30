@@ -29,6 +29,7 @@ export default function App() {
     fetchAccountsCopy()
       .then((data) => {
         setAccounts(data);
+        setSelectedAccount(data[0]);
       })
       .catch((error) => console.error("Error fetching data: ", error));
   }, []);
@@ -52,6 +53,7 @@ export default function App() {
           setSelectedAccount={(account: AccountData) =>
             setSelectedAccount(account)
           }
+          selectedAccount={account}
         />
         <br></br>
         <br></br>

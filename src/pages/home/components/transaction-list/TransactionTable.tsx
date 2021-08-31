@@ -16,7 +16,7 @@ export const TransactionTable = ({
   const rows: JSX.Element[] = [];
 
   transactions.forEach((transactionData) => {
-    if (transactionData.key === account?.key) {
+    if (transactionData.id === account?.id) {
       transactionData.transactions.booked.forEach((transaction) => {
           if(transaction.remittanceInformationUnstructuredArray.join(' ').toLowerCase().indexOf(filterText) !== -1) {
             rows.push(

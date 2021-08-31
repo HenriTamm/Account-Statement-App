@@ -12,7 +12,7 @@ export const AccountTable = ({ accounts, setSelectedAccount, selectedAccount } :
 
   accounts.forEach((account) => {
     rows.push(
-      <AccountRow key={account.key} account={account} 
+      <AccountRow key={account.id} account={account} 
       setSelectedAccount={(account: AccountData) => setSelectedAccount(account)}
       checked={account === selectedAccount}/>
     );

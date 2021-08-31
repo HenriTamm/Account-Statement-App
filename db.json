@@ -1,7 +1,7 @@
 {
   "accounts-list": [
     {
-      "key": "1-investments-eur",
+      "id": "1-investments-eur",
       "basicDetails": {
         "id": "1-investment-eur",
         "created": "2021-06-03T19:51:43.863698Z",
@@ -23,18 +23,24 @@
       "balances": {
         "balances": [
           {
-            "balanceAmount": { "amount": "1965.20", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "1965.20",
+              "currency": "EUR"
+            },
             "balanceType": "interimAvailable"
           },
           {
-            "balanceAmount": { "amount": "1969.08", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "1969.08",
+              "currency": "EUR"
+            },
             "balanceType": "interimBooked"
           }
         ]
       }
     },
     {
-      "key": "2-current-eur",
+      "id": "2-current-eur",
       "basicDetails": {
         "id": "2-current-eur",
         "created": "2021-06-03T19:51:43.863698Z",
@@ -56,18 +62,24 @@
       "balances": {
         "balances": [
           {
-            "balanceAmount": { "amount": "149.50", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "149.50",
+              "currency": "EUR"
+            },
             "balanceType": "interimAvailable"
           },
           {
-            "balanceAmount": { "amount": "170.20", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "170.20",
+              "currency": "EUR"
+            },
             "balanceType": "interimBooked"
           }
         ]
       }
     },
     {
-      "key": "3-savings-eur",
+      "id": "3-savings-eur",
       "basicDetails": {
         "id": "3-savings-eur",
         "created": "2021-06-03T19:51:43.863698Z",
@@ -89,18 +101,24 @@
       "balances": {
         "balances": [
           {
-            "balanceAmount": { "amount": "200.20", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "200.20",
+              "currency": "EUR"
+            },
             "balanceType": "interimAvailable"
           },
           {
-            "balanceAmount": { "amount": "200.20", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "200.20",
+              "currency": "EUR"
+            },
             "balanceType": "interimBooked"
           }
         ]
       }
     },
     {
-      "key": "4-company-eur",
+      "id": "4-company-eur",
       "basicDetails": {
         "id": "4-company-eur",
         "created": "2021-06-14T12:15:30.969365Z",
@@ -122,11 +140,17 @@
       "balances": {
         "balances": [
           {
-            "balanceAmount": { "amount": "1533.19", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "1533.19",
+              "currency": "EUR"
+            },
             "balanceType": "interimAvailable"
           },
           {
-            "balanceAmount": { "amount": "1536.99", "currency": "EUR" },
+            "balanceAmount": {
+              "amount": "1536.99",
+              "currency": "EUR"
+            },
             "balanceType": "interimBooked"
           }
         ]
@@ -135,29 +159,42 @@
   ],
   "transactions-list": [
     {
-      "key": "1-investments-eur",
+      "id": "1-investments-eur",
       "transactions": {
         "booked": [
           {
             "bookingDate": "2021-04-16",
             "currencyExchange": {
               "exchangeRate": "5.77",
-              "instructedAmount": { "amount": "17.34", "currency": "EUR" },
+              "instructedAmount": {
+                "amount": "17.34",
+                "currency": "EUR"
+              },
               "sourceCurrency": "EUR",
               "targetCurrency": "GBP",
               "unitCurrency": "EUR"
             },
             "proprietaryBankTransactionCode": "EXCHANGE",
-            "remittanceInformationUnstructuredArray": ["Exchanged from EUR"],
-            "transactionAmount": { "amount": "17.34", "currency": "GBP" },
+            "remittanceInformationUnstructuredArray": [
+              "Exchanged from EUR"
+            ],
+            "transactionAmount": {
+              "amount": "17.34",
+              "currency": "GBP"
+            },
             "transactionId": "60798d7a-d50b-a136-b3d0-522955757a2c",
             "valueDate": "2021-04-16"
           },
           {
             "bookingDate": "2021-05-17",
             "proprietaryBankTransactionCode": "TRANSFER",
-            "remittanceInformationUnstructuredArray": ["From John Johnson"],
-            "transactionAmount": { "amount": "6.00", "currency": "GBP" },
+            "remittanceInformationUnstructuredArray": [
+              "From John Johnson"
+            ],
+            "transactionAmount": {
+              "amount": "6.00",
+              "currency": "GBP"
+            },
             "transactionId": "60a1b22a-39f5-a3a8-90b9-b6c6ff44a47f",
             "valueDate": "2021-05-17"
           }
@@ -165,41 +202,63 @@
       }
     },
     {
-      "key": "2-current-eur",
+      "id": "2-current-eur",
       "transactions": {
         "booked": [
           {
             "bookingDate": "2021-04-16",
             "currencyExchange": {
               "exchangeRate": "0.17",
-              "instructedAmount": { "amount": "17.34", "currency": "GBP" },
+              "instructedAmount": {
+                "amount": "17.34",
+                "currency": "GBP"
+              },
               "sourceCurrency": "EUR",
               "targetCurrency": "GBP",
               "unitCurrency": "EUR"
             },
-            "debtorAccount": { "iban": "EUR123456789" },
+            "debtorAccount": {
+              "iban": "EUR123456789"
+            },
             "debtorName": "Current account EUR",
             "proprietaryBankTransactionCode": "EXCHANGE",
-            "remittanceInformationUnstructuredArray": ["Exchanged to GBP"],
-            "transactionAmount": { "amount": "-100", "currency": "EUR" },
+            "remittanceInformationUnstructuredArray": [
+              "Exchanged to GBP"
+            ],
+            "transactionAmount": {
+              "amount": "-100",
+              "currency": "EUR"
+            },
             "transactionId": "60798d7a-d50b-a136-b3d0-522955757a2c",
             "valueDate": "2021-04-16"
           },
           {
             "bookingDate": "2021-06-07",
-            "debtorAccount": { "bban": "RO123456789" },
+            "debtorAccount": {
+              "bban": "RO123456789"
+            },
             "debtorName": "Current account EUR",
             "proprietaryBankTransactionCode": "CARD_PAYMENT",
-            "remittanceInformationUnstructuredArray": ["Prisma"],
-            "transactionAmount": { "amount": "-6.98", "currency": "EUR" },
+            "remittanceInformationUnstructuredArray": [
+              "Prisma"
+            ],
+            "transactionAmount": {
+              "amount": "-6.98",
+              "currency": "EUR"
+            },
             "transactionId": "60be7284-c890-afcb-8b23-6e4dacc824e2",
             "valueDate": "2021-06-08"
           },
           {
             "bookingDate": "2021-06-24",
             "proprietaryBankTransactionCode": "TRANSFER",
-            "remittanceInformationUnstructuredArray": ["From EUR Vault EUR"],
-            "transactionAmount": { "amount": "2100.00", "currency": "EUR" },
+            "remittanceInformationUnstructuredArray": [
+              "From EUR Vault EUR"
+            ],
+            "transactionAmount": {
+              "amount": "2100.00",
+              "currency": "EUR"
+            },
             "transactionId": "60d47dc0-9cc2-a2f4-bf45-b09efe2e1b55",
             "valueDate": "2021-06-24"
           }
@@ -207,22 +266,32 @@
       }
     },
     {
-      "key": "3-savings-eur",
+      "id": "3-savings-eur",
       "transactions": {
         "booked": [
           {
             "bookingDate": "2021-05-13",
             "proprietaryBankTransactionCode": "TRANSFER",
-            "remittanceInformationUnstructuredArray": ["From EUR"],
-            "transactionAmount": { "amount": "20.00", "currency": "EUR" },
+            "remittanceInformationUnstructuredArray": [
+              "From EUR"
+            ],
+            "transactionAmount": {
+              "amount": "20.00",
+              "currency": "EUR"
+            },
             "transactionId": "609D08e4-4f43-a6c9-b1b8-7b2a8a10d422",
             "valueDate": "2021-05-13"
           },
           {
             "bookingDate": "2021-05-13",
             "proprietaryBankTransactionCode": "TRANSFER",
-            "remittanceInformationUnstructuredArray": ["To EUR"],
-            "transactionAmount": { "amount": "-20.00", "currency": "EUR" },
+            "remittanceInformationUnstructuredArray": [
+              "To EUR"
+            ],
+            "transactionAmount": {
+              "amount": "-20.00",
+              "currency": "EUR"
+            },
             "transactionId": "609d08e4-4f43-a6c9-b1b8-7b2a8a10d422",
             "valueDate": "2021-05-13"
           }

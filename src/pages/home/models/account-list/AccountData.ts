@@ -3,7 +3,7 @@ import { AccountDetails } from "./AccountDetails";
 import { Balances } from "./Balances";
 
 export interface AccountData {
-    key: string,
+    id: string,
     basicDetails: BasicDetails;
     accountDetails: AccountDetails;
     balances: Balances;

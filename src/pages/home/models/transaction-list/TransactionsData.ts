@@ -1,6 +1,6 @@
 import { Transactions } from "./Transactions";
 
 export interface TransactionData {
-    key: string,
+    id: string,
     transactions: Transactions;
 }

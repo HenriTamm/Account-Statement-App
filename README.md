@@ -5,7 +5,10 @@ src/pages - All the various pages are defined here.
 - Each page will have a “components” dir. This will hold all the components that are required by only this page.
 - Each page will have a “models” dir. This will hold all the component props types.
 
-## Available Scripts
+## Mock REST server
+Run `npm run server` to run mock rest server on port 5001. Mock endpoints are located in `db.json`
+
+## Other Available Scripts
 
 In the project directory, you can run:
 

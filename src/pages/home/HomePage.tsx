@@ -6,6 +6,7 @@ import { TransactionData } from "./models/transaction-list/TransactionsData";
 import { TransactionTable } from "./components/transaction-list/TransactionTable";
 import { Link } from "react-router-dom";
 import { getAccounts, getTransactions } from "../../api/dbService";
+import "./HomePage.css";
 
 // - AccountTable
 // -- AccountRow
@@ -37,31 +38,18 @@ export const HomePage = () => {
 
   return (
     <div className="App">
-      <h1>Account statement</h1>
+      <Link to="/insert-transaction" >Insert transaction</Link>
+      <h1 className="title">Account statement</h1>
       <div>
-        <Link to="/insert-transaction">Insert transaction</Link>
-        <br></br>
-        <br></br>
         <AccountTable
           accounts={accounts}
-          setSelectedAccount={(account: AccountData) =>
-            setSelectedAccount(account)
-          }
+          setSelectedAccount={(account: AccountData) => setSelectedAccount(account)}
           selectedAccount={account}
         />
         <br></br>
         <br></br>
-        <SearchBar
-          filterText={filterText}
-          handleFilterTextChange={(filterText: string) =>
-            setFilterText(filterText)
-          }
-        />
-        <TransactionTable
-          transactions={transactions}
-          account={account}
-          filterText={filterText.toLowerCase()}
-        />
+        <SearchBar filterText={filterText} handleFilterTextChange={(filterText: string) => setFilterText(filterText)} />
+        <TransactionTable transactions={transactions} account={account} filterText={filterText.toLowerCase()} />
       </div>
     </div>
   );

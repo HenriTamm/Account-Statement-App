@@ -1,6 +1,6 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import { HomePage } from "./pages/home/HomePage";
-import { InsertTransactions } from "./pages/insert-transaction/InsertTransactions";
+import { AddAccount } from "./pages/insert-transaction/InsertTransactions";
 import "./styles.css";
 
 // Tasks:
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Route exact path="/" component={HomePage} />
-      <Route path="/insert-transaction" component={InsertTransactions} />
+      <Route path="/insert-transaction" component={AddAccount} />
     </BrowserRouter>
   );
 }

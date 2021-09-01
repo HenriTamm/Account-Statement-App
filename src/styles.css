@@ -1,9 +1,18 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 body {
-  padding: 5px
+  padding: 5px;
 }
 
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}

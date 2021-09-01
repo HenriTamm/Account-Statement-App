@@ -1,23 +1,13 @@
 import { Link } from "react-router-dom";
+import { TransactionForm } from "./TransactionForm";
 
-export const InsertTransactions = () => {
-
-    function handleSubmit(event: Event) {
-        console.log(event)
-    }
+export const AddAccount = () => {
 
   return (
     <div>
       <Link to="/">Back</Link>
-      <br></br>
-      <br></br>
-      {/* <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form> */}
+      <h1>Insert transaction: </h1>
+      <TransactionForm />
     </div>
   );
 };

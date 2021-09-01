@@ -1,0 +1,45 @@
+.transaction-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-form li + li {
+  margin-top: 1em;
+}
+
+.transaction-form label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+.transaction-form input {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+.transaction-form input:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+.transaction-form .button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+.transaction-form button {
+  /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+  margin-left: 0.5em;
+}
